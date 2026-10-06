@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M3S5</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 16px;
+    }
+
+    .layout-container {
+      display: grid;
+      min-height: calc(100vh - 32px);
+      gap: 10px;
+      grid-template-columns: 200px 1fr 150px;
+      grid-template-rows: 80px 1fr 1fr 1fr 60px;
+
+      grid-template-areas:
+        "header  header  header"
+        "sidebar maincontent  wildcard1"
+        "sidebar maincontent  wildcard2"
+        "sidebar maincontent  wildcard3"
+        "footer  footer  footer";
+    }
+
+    .layout-containerr {
+      padding: 12px;
+      border: 1px solid #999;
+      font-size: 14px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #2d8bf8;
+      color: #f7f3f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      border: 1px solid #000000
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #dfe6f0;
+      border: 1px solid #000000
+    }
+
+    .maincontent {
+      grid-area: maincontent;
+      background-color: #e6e8ea;
+      border: 1px solid #000000
+    }
+
+    .wildcard1 {
+      grid-area: wildcard1;
+      background-color: #b2d4a7;
+      border: 1px solid #000000
+    }
+
+    .wildcard2 {
+      grid-area: wildcard2;
+      background-color: #b2d4a7;
+      border: 1px solid #000000
+    }
+
+    .wildcard3 {
+      grid-area: wildcard3;
+      background-color: #b2d4a7;
+      border: 1px solid #000000
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #33373d;
+      color: #f7f3f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000000
+    }
+  </style>
+</head>
+<body>
+  <div class="layout-container">
+    <header class="header">Header</header>
+    <aside class="sidebar">Sidebar</aside>
+    <main class="maincontent">Main content</main>
+    <div class="wildcard1">Wildcard</div>
+    <div class="wildcard2">Wildcard</div>
+    <div class="wildcard3">Wildcard </div>
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+</html>
